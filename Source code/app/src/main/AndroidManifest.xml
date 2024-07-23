@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.quotes">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/status_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/status_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.quotes.Home"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.quotes.ViewQuotes"
+            android:theme="@style/custome" />
+        <activity
+            android:name="com.example.quotes.Welcome"
+            android:theme="@style/custome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.quotes.Select_Language"
+            android:theme="@style/custome" />
+        <activity android:name="com.example.quotes.ShareQuotes" />
+        <activity android:name="com.example.quotes.MainActivity"></activity>
+    </application>
+
+</manifest>
